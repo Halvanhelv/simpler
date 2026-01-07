@@ -65,7 +65,7 @@ module Simpler
         format = Render.new(template).call
         custom_render(format)
       else
-        @request.env['simpler.template'] = template # это не хэш а метод квадратные скобки
+        @request.env['simpler.template'] = template # this is not a hash but a square brackets method
       end
     end
   end
